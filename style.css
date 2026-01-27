@@ -6,21 +6,6 @@
   font-weight: lighter;
 }
 
-@font-face {
-  font-family: 'Aeonik';
-  src: url('Downloads/HTML/XTRAGLEAM/fonts/AeonikTRIAL-Light.otf') format('opentype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Aeonik';
-  src: url('Downloads/HTML/XTRAGLEAM/fonts/AeonikTRIAL-Regular.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-
 .logo {
   width: 240px;
   height: 60px;
@@ -67,7 +52,7 @@ header {
   justify-content:space-between;
   align-items: center;
   margin: 50px 75px;
-  height: 60px;
+  height: auto;
   background-color: white;
 }
 
@@ -127,7 +112,7 @@ h1 {
   margin-bottom: 40px;
 }
 
-.hero-image img{
+.hero-image img {
   width: 470px;
   height: 690px;
 }
@@ -160,7 +145,7 @@ h1 {
 
 .hero {
   display: flex;
-  height: 520px;
+  height: 550px;
   position: relative;
   overflow: hidden;
   justify-content: space-between;
@@ -175,13 +160,11 @@ h1 {
   color: black;
   font-weight: normal;
   font-size: 50px;
-  align-items: left;
   margin-bottom: 50px;
 }
 
 .reason-text {
   font-size: 27px;
-  gap: 10px;
   margin: 16px 0px 16px 24px;
   max-width: 617px;
 }
@@ -204,9 +187,7 @@ h1 {
 }
 
 .reason {
-  height: 628px;
-  justify-content: space-between;
-  align-items: center;
+  height: auto;
   background-color: #F0F0F0;
   padding: 40px 50px;
   margin: 50px 75px 100px 75px;
@@ -260,8 +241,8 @@ h1 {
 }
 
 .card-bottom {
-  width: 360px;
-  height: 103px;
+  width: auto;
+  height: auto;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -281,6 +262,7 @@ h1 {
 .card {
   background-color: #F0F0F0;
   border-radius: 10px;
+  display: flex;
   flex-direction: column;
   overflow: hidden;
   border: 1px solid #E4E4E4;
@@ -295,9 +277,7 @@ h1 {
 }
 
 .product {
-  height: 947px;
-  justify-content: space-between;
-  align-items: center;
+  height: auto;
   background-color: white;
   margin: 50px 75px 100px 75px;
 }
@@ -306,30 +286,27 @@ h1 {
   color: black;
   font-weight: normal;
   font-size: 50px;
-  align-items: left;
   margin-bottom: 50px;
 }
 
 .testimonial-people {
-  column-count: 3; 
-  column-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   padding: 20px;
 }
 
 .testimonial-card {
-  break-inside: avoid; 
-  display: inline-block;
-  width: 100%;
   background: white;
   border-radius: 15px;
   padding: 25px;
-  margin-bottom: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
+
 .testimonial-card img{
-  align-items: center;
-  justify-content: center;
+  display: block;
+  margin: 0 auto 15px;
 }
 
 .testimonial-card h3 {
@@ -345,19 +322,17 @@ h1 {
 }
 
 .testimonial {
-  height: 1044px;
-  justify-content: space-between;
-  align-items: center;
+  height: auto;
   background-color: #F0F0F0;
   margin: 50px 75px 100px 75px;
   padding: 60px 20px;
 }
 
 .sale-content {
-  width: 998px;
-  height: 510px;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 20px;
 }
 
 .sale-title {
@@ -367,7 +342,6 @@ h1 {
 
 .sale-desc {
   font-size: 36px;
-  opacity: 0.9;
 }
 
 .sale-reminder {
@@ -383,12 +357,9 @@ h1 {
 }
 
 .sale {
-  height: 610px;
+  height: auto;
   padding: 60px 40px;
-  display: flex;
   text-align: center;
-  align-items: center;
-  justify-content: center;
   background: linear-gradient(
     to right,
     #D1068C 0%,
@@ -403,7 +374,6 @@ h1 {
   color: black;
   font-weight: normal;
   font-size: 50px;
-  align-items: left;
   margin-bottom: 60px;
 }
 
@@ -411,7 +381,6 @@ h1 {
   font-size: 25px;
   gap: 10px;
   margin: 16px 0px 16px 24px;
-  max-width: 617px;
 }
 
 .guide-title {
@@ -428,7 +397,7 @@ h1 {
 
 .guide-image img {
   width: 585px;
-  height: 724px;
+  height: auto;
   margin-top: -70px;
   margin-right: -20px;
 }
@@ -437,10 +406,12 @@ h1 {
   color: black;
   font-size: 32px;
   background-color: white;
+  margin-top: 30px;
 }
 
 .guide {
-  height: 706px;
+  height: auto;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #F0F0F0;
@@ -451,7 +422,7 @@ h1 {
 footer {
   background-color: #121212;
   color: white;
-  padding: 60px 5%;
+  padding: 60px;
 }
 
 .footer-content {
@@ -524,7 +495,6 @@ footer {
   width: 100%;
   height: 1px;
   background-color: #727272;
-  margin: 40px 0px 20px 0px;
 }
 
 .footer-bottom {
