@@ -180,13 +180,7 @@ h1 {
   display: flex;
 }
 
-.reason-image img {
-  width: 559px;
-  height: 427px;
-}
-
 .reason {
-  height: auto;
   background-color: #F0F0F0;
   padding: 40px 50px;
   margin: 50px 75px 100px 75px;
@@ -240,8 +234,6 @@ h1 {
 }
 
 .card-bottom {
-  width: auto;
-  height: auto;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -285,7 +277,6 @@ h1 {
 }
 
 .product {
-  height: auto;
   background-color: white;
   margin: 50px 75px 100px 75px;
 }
@@ -300,8 +291,7 @@ h1 {
 .testimonial-people {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 20px;
+  gap: 15px;
 }
 
 .testimonial-card {
@@ -334,7 +324,6 @@ p strong {
 }
 
 .testimonial {
-  height: auto;
   background-color: #F0F0F0;
   margin: 50px 75px 100px 75px;
   padding: 60px 20px;
@@ -369,7 +358,6 @@ p strong {
 }
 
 .sale {
-  height: auto;
   padding: 60px 40px;
   text-align: center;
   background: linear-gradient(
@@ -412,8 +400,6 @@ p strong {
 }
 
 .guide-image img {
-  width: 585px;
-  height: auto;
   margin-top: -70px;
   margin-right: -20px;
 }
@@ -426,7 +412,6 @@ p strong {
 }
 
 .guide {
-  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -438,17 +423,15 @@ p strong {
 footer {
   background-color: #121212;
   color: white;
-  padding: 60px;
 }
 
 .footer-content {
   max-width: 1200px;  
-  margin: 0 auto;
+  padding: 60px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 40px;
-  padding-bottom: 40px;
 }
 
 .footer-section {
