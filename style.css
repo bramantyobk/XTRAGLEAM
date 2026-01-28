@@ -52,7 +52,6 @@ header {
   justify-content:space-between;
   align-items: center;
   margin: 50px 75px;
-  height: auto;
   background-color: white;
 }
 
@@ -151,9 +150,9 @@ h1 {
   justify-content: space-between;
   align-items: center;
   background-color: #FFF6FD;
+  border-radius: 20px;
   padding: 80px 0px 60px 80px;
   margin: 50px 75px 100px 75px;
-  border-radius: 20px;
 }
 
 .reason h2 {
@@ -249,14 +248,24 @@ h1 {
   align-items: center;
   margin-top: 15px;
   padding: 30px 20px;
+  font-size: 15px;
 }
 
 .btn-cart {
   color: white;   
-  font-size: 16px;
   background-color: black;
   padding: 5px 10px;
   cursor: pointer;
+}
+
+.old-price {
+  text-decoration: line-through;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.new-price {
+  font-weight: normal;
 }
 
 .card {
@@ -272,7 +281,6 @@ h1 {
 .all-product {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 415px); 
   gap: 17px;
 }
 
@@ -319,6 +327,10 @@ h1 {
 .testimonial-card p {
   font-size: 24px;
   color: black;
+}
+
+p strong {
+  font-weight: normal;
 }
 
 .testimonial {
@@ -381,6 +393,10 @@ h1 {
   font-size: 25px;
   gap: 10px;
   margin: 16px 0px 16px 24px;
+}
+
+.guide-text p strong {
+  text-decoration: underline;
 }
 
 .guide-title {
@@ -470,25 +486,24 @@ footer {
 .subscribe-form {
     display: flex;
     background: #E9E9E9; 
-    border-radius: 4px;
-    overflow: hidden;
+    border-radius: 5px;
 }
 
 .subscribe-form input {
     border: none;
     padding: 10px 15px;
     background: transparent;
-    flex-grow: 1;
+    flex: 1;
     outline: none;
 }
 
 .subscribe-form button {
     background: black;
     color: white;
-    border: none;
+    border: 1px solid #E9E9E9;
     padding: 10px 20px;
     cursor: pointer;
-    font-weight: bold;
+    border-radius: 5px;
 }
 
 .footer-line {
